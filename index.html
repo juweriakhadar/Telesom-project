@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<img src="logo.webp" id="logo">
+<nav class="pages">
+<a href="index.html">Home</a>
+<a href="#">About</a>
+<a href="#">Admission</a>
+<a href="#">Contact</a>
+<input type="search" id="search" placeholder="Search...">
+
+<nav>
+</header>
+<div class="slider">
+  <img src="sn4.webp" class="slide active" width="100">
+  <img src="sn2.jfif" class="slide">
+  <img src="sn4.webp" class="slide">
+  <img src="OIP.webp" class="slide">
+
+</div>
+<br><br><br>
+<main>
+     <section class="section1"> 
+        <h2>Events</h2>
+        <h5>Telesom Company</h5>
+        <P> <img src="s1.webp" alt="" id="sawir"> 
+            Telesom was the first to introduce 2G, 3G, and LTE services to the country, and played a significant role in rebuilding the country after
+             the war by building a robust telecommunication infrastructure and enabling access to digital payments
+             via its flagship mobile money platform ZAAD SERVICE</P>
+             <p class="event-date"></p>
+             <div class="event">
+  <img src="calen.jpg" width="20">
+</div>
+        <br>
+
+        <h5>Telesom Company</h5>
+        <P> <img src="s1.webp"alt="" id="sawir">  Telesom was the first to introduce 2G, 3G, and LTE services to the country,
+             and played a significant role in rebuilding the country after the war by building a robust telecommunication infrastructure
+             and enabling access to digital payments via its flagship mobile money platform ZAAD SERVICE</P>
+             <p class="event-date"></p>
+             <div class="event">
+  <img src="calen.jpg" width="20">
+</div>
+
+        
+    </section>
+
+<section class="section2">
+
+  <h2>Admission</h2>
+        <h5>Telesom Company</h5>
+        <p> <img src="s1.webp" alt=""  id="sawir">Telesom was the first to introduce 2G, 3G, and LTE services to the country, and played
+             a significant role in rebuilding the country after the war by building a robust telecommunication a significant role in rebuilding the country after the war by 
+             building a robust telecommunicationinfrastructure and enabling access
+              to digital payments via its flagship mobile money platform ZAAD  SERVICE</p>
+              <p class="event-date"></p>
+              <div class="event">
+  <img src="calen.jpg" width="20">
+</div>
+<br>
+        <h5>Telesom Company</h5>
+        <P> <img src="s1.webp" alt="" id="sawir">Telesom was the first to introduce 2G, 3G, and LTE services to the country,and played a significant role
+             in rebuilding the country after the war by building a robust telecommunication infrastructure and enabling access to digital payments via its
+             flagship Telesom was the first to introduce 2G, 3G, and LTE services to the country,and played a significant role
+             in rebuilding the cenabling access mobile money platform ZAAD SERVICE</P>
+             <p class="event-date"></p>
+             <div class="event">
+  <img src="calen.jpg" width="20">
+</div>
+             </section>
+         <section class="section3">
+    <h2>Registration</h2>
+    <form action="#" method="post">
+        <label for="fname"> First Name</label>
+        <br>
+        <input type=" text" id="fname" name="fname" placeholder="Enter your first name" required> <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Enter yor email addres" required>  <br><br>
+
+        <label for="number">Phone Number:</label>
+        <br>
+        <input type="tel" id="number" name="number" placeholder="Enter your phone number " required> <br><br>
+
+        <label for="message">Message:</label> 
+        <br>
+        <textarea name="message" id="message" name="message" rows="5" placeholder="Write your message here"></textarea> <br><br>
+        <input type="submit" value="submit">
+
+
+    </form>
+
+</section>
+
+   
+
+</main>
+
+<!--This is footer section-->
+<footer>
+    <section class="fleft">
+        <h3>Telesom Company</h3>
+        <p>Telesom is a telecommunications company in Somaliland that was established in 2002. 
+            It is a leading provider of mobile voice, data, internet, and financial services, including 
+            the ZAAD mobile money platform.</p>
+ </section>
+
+<section class="fcenter">
+    <h3>Quick links</h3>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Articles</a>
+    <a href="#">Contact</a>
+    <a href="#">Addmission</a>
+
+</section>
+<p>&copy;All right Reserved | Developed by JUWERIA </p>
+</footer>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 3000); // 3 ilbiriqsi
+
+//date//
+const dates = document.querySelectorAll(".event-date");
+
+const today = new Date();
+const options = { 
+  weekday: 'long', 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+};
+
+const formattedDate = today.toLocaleDateString('en-US', options);
+
+dates.forEach(date => {
+  date.textContent = formattedDate;
+})
+</script>
+
+</body>
+</hmtl>
